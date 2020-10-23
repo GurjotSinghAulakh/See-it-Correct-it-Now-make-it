@@ -10,7 +10,6 @@
 body {
     margin: 0;
     font-size: 18px;
-    background-color: #CAD3C8;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
@@ -43,10 +42,9 @@ nav {
 }
 
 .right-side-menu-bar {
-/*  float: right; */
     position: fixed;
     width: 250px;
-    background-color: rgba(0, 0, 0, 0.2);
+    background-color: #CAD3C8;
     height: 100%;
 }
 
@@ -236,14 +234,19 @@ label #close-btn {
 
 @media only screen and (min-width: 1080px) {
     .logo {
-        margin-top: 15px;
+        margin-top: 30px;
         margin-bottom: 0px;
-    } 
-
-    .logo-txt {
-        letter-spacing: 2px;
     }
 
+    .logo-txt {
+        padding-top: 35px;
+        line-height: 40px;
+        font-size: 15px; 
+        text-align: center;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+    }
+    
     .logo img {
         width: 80px;
     }
@@ -254,20 +257,138 @@ label #close-btn {
 
     .logo-txt h2 {
         font-size: 20px; 
-        line-height: 40px;
     }
 
     .right-side-menu-bar {
-        margin-top: 22px;
+        margin-top: 17px;
         left: 100%;
-        width: 15%;
+        width: 100%;
         float: right;
     }
 
+    nav .right-side-menu-bar ul li a {
+        display: block;
+        font-size: 20px;
+        padding: 0px 0px;
+    }
+
     #check-box:checked ~ .right-side-menu-bar {
-        left: 85%;
+        left: 0%;
     }
 }
+/*----------------- Background-pic ------------------*/
 
-/*----------------- Video ------------------*/
+.background {
+    top: 0;
+    background-image: url(Images/backgroundpic.jpg);
+    height: 100vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    opacity: 0.6;
+}
 
+.study-overview {
+    position: relative;
+    text-align: center;
+}
+
+.study-overview h1{
+    position: absolute;
+    bottom: 180px;
+    left: 60px;
+    font-size: 50px;
+    color: black;
+    font-weight: bold;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    text-decoration-line: underline;
+    text-underline-position: under;
+}
+
+.study-overview a{
+    position: absolute;
+    bottom: 120px;
+    left: 60px;
+    font-size: 25px;
+    color: black;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+.container video {
+    padding: 120px;
+    float: right;
+    width: 70%;
+}
+
+.background {
+    position: relative;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.background img{
+    height: 100vh;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.6);
+}
+
+.student-video {
+    height: 100vh;
+    width: 100%;
+}
+
+.student-video h3{
+    position: relative;
+    padding: 200px 30px 0px 70px;
+    font-size: 30px;
+    color: black;
+    font-weight: 900;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+.student-video h1{
+    position: relative;
+    padding-left: 70px;
+    font-size: 50px;
+    color: black;
+    font-weight: 900;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+.container-degrees h1{
+    padding-top: 50px;
+    text-align: center;
+    font-size: 50px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+.container-degrees h3{
+    padding-top: 10px;
+    text-align: center;
+    font-size: 30px;
+    letter-spacing: 1px;
+}
+
+.container-degrees {
+    width: 800px;
+    margin: 50px auto 0;
+    display: table;
+}
+
+.row {
+    margin: 10px 0;
+}
+
+.col {
+    display: table-cell;
+    padding: 10px;
+    background: #ccc;
+    width: 33.33333%;
+    text-align: center;
+    vertical-align: middle;
+    border-right: 10px solid black;
+}
