@@ -1,0 +1,272 @@
+* {
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+body {
+    margin: 0;
+    font-size: 18px;
+    background-color: #CAD3C8;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+nav {
+    position: fixed;
+    line-height: 80px;
+    width: 100%;
+    background-color: #CAD3C8;
+    overflow: hidden;
+    background-color: rgb(202, 211, 200, 1);
+    box-shadow: 4px 10px 10px #F8EFBA;
+    z-index: 1;
+}
+
+.logo {
+    display: flex;
+    margin-top: 0px;
+    float: left;
+    margin-left: 5%;
+    font-weight: bold;
+    font-size: 22px;
+    color: white;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+
+.logo img {
+    width: 100px;
+}
+
+.right-side-menu-bar {
+/*  float: right; */
+    position: fixed;
+    width: 250px;
+    background-color: rgba(0, 0, 0, 0.2);
+    height: 100%;
+}
+
+.right-side-menu-bar ul {
+    margin-right: 20px;
+}
+
+.right-side-menu-bar ul li {
+    margin: 0 10px;
+}
+
+.right-side-menu-bar ul li a {
+    color: black;;
+    padding: 7px 15px;
+    font-size: 18px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    display: block;
+    line-height: 60px;
+}
+
+.checkbtn-open {
+    color: white;
+    float: right;
+    margin-top: 20px;
+    margin-right: 20px;
+}
+
+.checkbtn-close {
+    color: white;
+    float: right;
+    margin-top: 20px;
+    display: none;
+}
+
+#check-box {
+    display: none;
+}
+
+label #bars-btn, label #close-btn {
+    background: black;
+    border-radius: 3px;
+}
+
+label #bars-btn {
+    padding: 6px 12px;
+}
+
+label #close-btn {
+    padding: 6px 12px;
+}
+
+#check-box:checked ~ label #bars-btn {
+    display: none;
+}
+
+@media only screen and (max-width: 380px) {
+    .logo {
+        margin-top: 30px;
+        margin-bottom: 0px;
+    }
+
+    .logo-txt {
+        padding-top: 35px;
+        line-height: 20px;
+        font-size: 15px; 
+        text-align: center;
+        text-transform: uppercase;
+    }
+    
+    .logo img {
+        width: 50px;
+    }
+
+    .logo-txt h1 {
+        font-size: 15px; 
+    }
+
+    .logo-txt h2 {
+        font-size: 12px; 
+    }
+    
+    .right-side-menu-bar {
+        margin-top: 5px;
+        width: 100%;
+        left: 100%;
+        transition: all 0.5s;
+        text-align: center;
+    }
+
+    .right-side-menu-bar ul {
+        display: block;
+    }
+
+    nav .right-side-menu-bar ul li a {
+        display: block;
+        font-size: 15px;
+        padding: 0px 0px;
+    }
+
+   #check-box:checked ~ .right-side-menu-bar {
+        left: 0%;
+    }
+
+    .checkbtn-close {
+        display: none;
+    }
+
+    #check-box:checked ~ .checkbtn-close {
+        display: block;
+        margin-right: 0px;
+    }
+}
+
+
+@media only screen and (min-width: 425px) {
+    .logo {
+        margin-top: 30px;
+        margin-bottom: 0px;
+    }
+
+    .logo-txt {
+        padding-top: 35px;
+        line-height: 20px;
+        font-size: 15px; 
+        text-align: center;
+        text-transform: uppercase;
+    }
+    
+    .logo img {
+        width: 50px;
+    }
+
+    .logo-txt h1 {
+        font-size: 15px; 
+    }
+
+    .logo-txt h2 {
+        font-size: 12px; 
+    }
+    
+    .right-side-menu-bar {
+        margin-top: 25px;
+        width: 100%;
+        left: 100%;
+        transition: all 0.5s;
+        text-align: center;
+    }
+
+    .right-side-menu-bar ul {
+        display: block;
+    }
+
+    nav .right-side-menu-bar ul li a {
+        display: block;
+        font-size: 15px;
+        padding: 0px 0px;
+    }
+
+   #check-box:checked ~ .right-side-menu-bar {
+        left: 0%;
+    }
+
+    .checkbtn-close {
+        display: none;
+    }
+
+    #check-box:checked ~ .checkbtn-close {
+        display: block;
+        margin-right: 0px;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    .right-side-menu-bar {
+        margin-top: 25px;
+        left: 100%;
+        width: 25%;
+        float: right;
+    }
+
+    #check-box:checked ~ .right-side-menu-bar {
+        left: 75%;
+    }
+}
+
+@media only screen and (min-width: 1080px) {
+    .logo {
+        margin-top: 15px;
+        margin-bottom: 0px;
+    } 
+
+    .logo-txt {
+        letter-spacing: 2px;
+    }
+
+    .logo img {
+        width: 80px;
+    }
+
+    .logo-txt h1 {
+        font-size: 22px; 
+    }
+
+    .logo-txt h2 {
+        font-size: 20px; 
+        line-height: 40px;
+    }
+
+    .right-side-menu-bar {
+        margin-top: 22px;
+        left: 100%;
+        width: 15%;
+        float: right;
+    }
+
+    #check-box:checked ~ .right-side-menu-bar {
+        left: 85%;
+    }
+}
+
+/*----------------- Video ------------------*/
+
