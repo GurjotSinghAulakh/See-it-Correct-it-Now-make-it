@@ -105,12 +105,18 @@ label #bars-btn, label #close-btn {
     border-radius: 3px;
 }
 
+
+
 label #bars-btn {
     padding: 6px 12px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
 }
 
 label #close-btn {
     padding: 6px 12px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
 }
 
 #check-box:checked ~ label #bars-btn {
@@ -306,9 +312,7 @@ label #close-btn {
         left: 0%;
     }
 }
-
-
-/*----------------- Background-pic ------------------*/
+/*----------------- Background ------------------*/
 
 .main-background {
     top: 0;
@@ -349,27 +353,17 @@ label #close-btn {
     text-transform: uppercase;
 }
 
-.container video {
-    padding: 120px;
-    float: right;
-    width: 70%;
-}
-
-.background {
-    position: relative;
-    background-size: cover;
-    background-repeat: no-repeat;
-}
-
-.background img{
-    height: 100vh;
-    width: 100%;
-    background-color: rgba(255, 255, 255, 0.6);
-}
+/*----------------- Student Video ------------------*/
 
 .student-video {
     height: 100vh;
     width: 100%;
+}
+
+.container video {
+    padding: 120px;
+    float: right;
+    width: 70%;
 }
 
 .student-video h3{
@@ -392,6 +386,25 @@ label #close-btn {
     text-transform: uppercase;
 }
 
+.student-video h1 span{
+    background-color: #F8EFBA;
+}
+
+/*----------------- Campus ------------------*/
+
+.campus {
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.campus-image img{
+    height: 100vh;
+    width: 100%;
+    opacity: 0.5;
+}
+
+/*----------------- Degrees ------------------*/
+
 .container-degrees h1{
     padding-top: 50px;
     text-align: center;
@@ -407,22 +420,6 @@ label #close-btn {
     letter-spacing: 1px;
 }
 
-.container-degrees {
-    width: 800px;
-    margin: 50px auto 0;
-    display: table;
-}
-
 .row {
-    margin: 10px 0;
-}
-
-.col {
-    display: table-cell;
-    padding: 10px;
-    background: #ccc;
-    width: 33.33333%;
-    text-align: center;
-    vertical-align: middle;
-    border-right: 10px solid black;
+    width: 20%;
 }
