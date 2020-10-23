@@ -223,19 +223,42 @@ label #close-btn {
     .right-side-menu-bar {
         margin-top: 25px;
         left: 100%;
-        width: 25%;
         float: right;
     }
 
-    #check-box:checked ~ .right-side-menu-bar {
-        left: 75%;
+
+    .logo-txt h1 {
+        font-size: 22px; 
+    }
+
+    .logo-txt h2 {
+        font-size: 20px; 
+    }
+
+    .logo img {
+        width: 75px;
     }
 }
 
-@media only screen and (min-width: 1080px) {
+@media only screen and (min-width: 1040px) {
     .logo {
         margin-top: 30px;
         margin-bottom: 0px;
+    }
+
+    .checkbtn-open {
+        color: white;
+        float: right;
+        height:2px;
+        margin-top: 20px;
+        margin-right: 20px;
+    }
+    
+    .checkbtn-close {
+        color: white;
+        float: right;
+        margin-top: 20px;
+        display: none;
     }
 
     .logo-txt {
@@ -262,7 +285,6 @@ label #close-btn {
     .right-side-menu-bar {
         margin-top: 17px;
         left: 100%;
-        width: 100%;
         float: right;
     }
 
