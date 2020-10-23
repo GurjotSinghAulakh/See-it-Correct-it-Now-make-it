@@ -1,0 +1,28 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+.wrapper{
+    margin: 200px auto;
+    width: 1062px;
+}
+.wrapper h1{
+    margin: 40px 0 20px 0;
+    padding: 10px 0;
+    font-family:Arial, Helvetica, sans-serif ;
+    font-size: 45px;
+    border-bottom: 2px black solid;
+}
+
+.wrapper a{
+    text-decoration: none;
+    color: #111;
+}
+.wrapper li{
+    list-style: none;
+    color: #111;
+    padding:40px 10px;
+    font-size: x-large;
+    border-bottom: lightgray 1px solid;
+}
+
