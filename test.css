@@ -14,9 +14,8 @@ body {
 }
 
 nav {
-    padding: 0 0 10px 0;
     position: fixed;
-    top:0px;
+    top: 0px;
     line-height: 80px;
     width: 100%;
     background-color: #CAD3C8;
@@ -28,7 +27,7 @@ nav {
 
 .logo {
     display: flex;
-    margin-top: 0px;
+    margin-top: 20px;
     float: left;
     margin-left: 5%;
     font-weight: bold;
@@ -37,23 +36,43 @@ nav {
     margin-bottom: 10px;
     cursor: pointer;
 }
-.logo-txt a{
-    text-decoration: none;
-    color:black;
+
+.logo img {
+    width: 100px;
 }
-.logo-txt li{
+
+.logo-txt {
+    padding-top: 20px;
+    line-height: 40px;
+    font-size: 15px; 
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-right: 150px;
+}
+
+.logo-txt h1 {
+    font-size: 22px; 
+}
+
+.logo-txt h2 {
+    font-size: 20px; 
+}
+
+.logo-txt ul li{
     padding: 5px 10px;
     display: inline;
     border: 1px solid black;
 }
 
-.logo-txt li:hover{
-    background-color: #F8EFBA;
-    transition: 0.5s;
+.logo-txt ul li a{
+    text-decoration: none;
+    color:black;
 }
 
-.logo img {
-    width: 100px;
+.logo-txt ul li:hover{
+    background-color: #F8EFBA;
+    transition: 0.5s;
 }
 
 .right-side-menu-bar {
@@ -61,30 +80,39 @@ nav {
     width: 250px;
     background-color: #CAD3C8;
     height: 100%;
+    width: 100%;
+    left: 100%;
+    transition: all 0.5s;
+    text-align: center;
 }
 
 .right-side-menu-bar ul {
-    margin-right: 20px;
+    display: block;
+    line-height: 50px;
 }
 
 .right-side-menu-bar ul li {
-    margin: 0 10px;
+    margin: 5px;
 }
 
 .right-side-menu-bar ul li a {
-    color: black;;
-    padding: 7px 15px;
-    font-size: 18px;
+    color: black;
+    padding: 10px;
+    font-size: 20px;
     font-weight: bold;
     letter-spacing: 2px;
     text-transform: uppercase;
-    display: block;
-    line-height: 60px;
+}
+
+.right-side-menu-bar a:hover {
+    background-color: #F8EFBA;
+    transition: 0.5s;
 }
 
 .checkbtn-open {
     color: white;
     float: right;
+    height: 2px;
     margin-top: 20px;
     margin-right: 20px;
 }
@@ -96,7 +124,21 @@ nav {
     display: none;
 }
 
+
 #check-box {
+    display: none;
+}
+
+#check-box:checked ~ .right-side-menu-bar {
+    left: 0%;
+}
+
+#check-box:checked ~ .checkbtn-close {
+    display: block;
+    margin-right: 0px;
+}
+
+#check-box:checked ~ label #bars-btn {
     display: none;
 }
 
@@ -104,8 +146,6 @@ label #bars-btn, label #close-btn {
     background: black;
     border-radius: 3px;
 }
-
-
 
 label #bars-btn {
     padding: 6px 12px;
@@ -119,10 +159,7 @@ label #close-btn {
     text-transform: uppercase;
 }
 
-#check-box:checked ~ label #bars-btn {
-    display: none;
-}
-
+/*
 @media only screen and (max-width: 380px) {
     .logo {
         margin-top: 30px;
@@ -132,9 +169,22 @@ label #close-btn {
     .logo-txt {
         padding-top: 35px;
         line-height: 20px;
-        font-size: 15px; 
         text-align: center;
         text-transform: uppercase;
+    }
+
+    .logo-txt ul {
+        margin: 5px;
+    }
+
+    .logo-txt ul li a{
+        font-size: 10px;
+    }
+
+    .logo-txt li{
+        padding: 5px 10px;
+        display: inline;
+        border: 1px solid black;
     }
     
     .logo img {
@@ -146,6 +196,7 @@ label #close-btn {
     }
 
     .logo-txt h2 {
+        padding: 2%;
         font-size: 12px; 
     }
     
@@ -160,10 +211,11 @@ label #close-btn {
         display: block;
     }
 
-    nav .right-side-menu-bar ul li a {
+    .right-side-menu-bar ul li a {
         display: block;
         font-size: 15px;
         padding: 0px 0px;
+        line-height: 40px;
     }
 
    #check-box:checked ~ .right-side-menu-bar {
@@ -178,6 +230,15 @@ label #close-btn {
         display: block;
         margin-right: 0px;
     }
+
+    label #bars-btn {
+        font-size: 10px;
+    }
+
+    label #close-btn {
+        font-size: 10px;
+    }
+    
 }
 
 
@@ -194,6 +255,14 @@ label #close-btn {
         text-align: center;
         text-transform: uppercase;
     }
+
+    .logo-txt ul {
+        margin: 5px;
+    }
+
+    .logo-txt ul li a{
+        font-size: 14px;
+    }
     
     .logo img {
         width: 50px;
@@ -218,10 +287,11 @@ label #close-btn {
         display: block;
     }
 
-    nav .right-side-menu-bar ul li a {
+    .right-side-menu-bar ul li a {
         display: block;
         font-size: 15px;
         padding: 0px 0px;
+        line-height: 50px;
     }
 
    #check-box:checked ~ .right-side-menu-bar {
@@ -236,61 +306,33 @@ label #close-btn {
         display: block;
         margin-right: 0px;
     }
+
+    label #bars-btn {
+        font-size: 14px;
+    }
+
+    label #close-btn {
+        font-size: 14px;
+    }
 }
 
 @media only screen and (min-width: 768px) {
     .right-side-menu-bar {
-
         left: 100%;
         float: right;
     }
 
-
-    .logo-txt h1 {
-        font-size: 22px; 
-    }
-
-    .logo-txt h2 {
-        font-size: 20px; 
-    }
-
-    .logo img {
-        width: 75px;
-    }
-}
-
-@media only screen and (min-width: 1040px) {
-    .logo {
-        margin-top: 30px;
-        margin-bottom: 0px;
-    }
-
-    .checkbtn-open {
-        color: white;
-        float: right;
-        height:2px;
-        margin-top: 20px;
-        margin-right: 20px;
-    }
-    
-    .checkbtn-close {
-        color: white;
-        float: right;
-        margin-top: 20px;
-        display: none;
-    }
-
     .logo-txt {
         padding-top: 35px;
-        line-height: 40px;
+        line-height: 25px;
         font-size: 15px; 
         text-align: center;
         text-transform: uppercase;
-        letter-spacing: 2px;
     }
-    
-    .logo img {
-        width: 80px;
+
+    .logo-txt ul {
+        margin: 0px;
+        padding: 10px;
     }
 
     .logo-txt h1 {
@@ -301,18 +343,13 @@ label #close-btn {
         font-size: 20px; 
     }
 
-
-    nav .right-side-menu-bar ul li a {
-        display: block;
-        font-size: 20px;
-        padding: 0px 0px;
-    }
-
-    #check-box:checked ~ .right-side-menu-bar {
-        left: 0%;
+    .logo img {
+        width: 85px;
     }
 }
-/*----------------- Background ------------------*/
+*/
+
+/*----------------- Main Background ------------------*/
 
 .main-background {
     top: 0;
@@ -324,10 +361,11 @@ label #close-btn {
 }
 
 .main-links {
-    bottom: 180px;
-    left: 60px;
+    bottom: 120px;
+    left: 50px;
     position: absolute;
     text-align: left;
+    letter-spacing: 1px;
 }
 
 .main-links a{
@@ -335,8 +373,7 @@ label #close-btn {
     padding: 5px;
     text-decoration: none;
     color:#111;
-    border: 2px solid #111;
-    border-radius: 25px;
+    border: 1px solid #111;
 }
 
 .main-links h1{
@@ -352,6 +389,52 @@ label #close-btn {
     font-size: 20px;
     text-transform: uppercase;
 }
+/*
+
+@media only screen and (max-width: 380px) {
+    .main-links {
+        bottom: 80px;
+        left: 40px;
+        position: absolute;
+        text-align: left;
+    }
+
+    .main-links h1{
+        font-size: 16px;
+    }
+    
+    .main-links h2{
+        font-size: 12px;
+    }
+}
+
+@media only screen and (min-width: 425px) {
+    .main-links {
+        bottom: 80px;
+        left: 40px;
+        position: absolute;
+        text-align: left;
+    }
+
+    .main-links h1{
+        font-size: 16px;
+    }
+    
+    .main-links h2{
+        font-size: 12px;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    .main-links h1{
+        font-size: 20px;
+    }
+    
+    .main-links h2{
+        font-size: 15px;
+    }
+}
+*/
 
 /*----------------- Student Video ------------------*/
 
@@ -368,7 +451,7 @@ label #close-btn {
 
 .student-video h3{
     position: relative;
-    padding: 200px 30px 0px 70px;
+    padding: 130px 30px 0px 70px;
     font-size: 30px;
     color: black;
     font-weight: 900;
@@ -378,6 +461,7 @@ label #close-btn {
 
 .student-video h1{
     position: relative;
+    padding-top: 20px;
     padding-left: 70px;
     font-size: 50px;
     color: black;
@@ -388,38 +472,436 @@ label #close-btn {
 
 .student-video h1 span{
     background-color: #F8EFBA;
+    padding: 2px;
+}
+/*
+@media only screen and (max-width: 380px) {
+    .student-video {
+        height: 70vh;
+        width: 100%;
+    }
+
+    .container video {
+        padding: 20px;
+        padding-top: 40px;
+        width: 100%;
+    }
+
+    .student-video h3{
+        padding: 10px 10px 10px 20px;
+        font-size: 16px;
+    }
+    
+    .student-video h1{
+        padding: 10px 10px 10px 20px;
+        font-size: 22px;
+    }
 }
 
-/*----------------- Campus ------------------*/
+@media only screen and (min-width: 425px) {
+    .student-video {
+        height: 90vh;
+        width: 100%;
+    }
 
-.campus {
+    .container video {
+        padding: 20px;
+        padding-top: 40px;
+        width: 100%;
+    }
+
+    .student-video h3{
+        padding: 10px 10px 10px 20px;
+        font-size: 18px;
+    }
+    
+    .student-video h1{
+        padding: 10px 10px 10px 20px;
+        font-size: 26px;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    .student-video {
+        height: 80vh;
+        width: 100%;
+    }
+
+    .container video {
+        padding: 50px;
+        padding-top: 40px;
+        width: 70%;
+    }
+
+    .student-video h3{
+        padding: 70px 10px 10px 20px;
+        font-size: 26px;
+    }
+    
+    .student-video h1{
+        padding: 10px 10px 10px 20px;
+        font-size: 30px;
+    }
+}
+*/
+
+
+/*----------------- Degrees ------------------*/
+
+.bk-image {
+    position: relative;
+}
+
+.bk-image .campus-image {
+    position: absolute;
+    z-index: -1;
+    background-image: url(Images/campus.jpg);
+    opacity: 0.4;
+    width: 100%;
+    height: 150vh;
     background-size: cover;
     background-repeat: no-repeat;
 }
 
-.campus-image img{
-    height: 100vh;
-    width: 100%;
-    opacity: 0.5;
-}
-
-/*----------------- Degrees ------------------*/
-
-.container-degrees h1{
-    padding-top: 50px;
+.degrees h1{
+    padding-top: 30px;
     text-align: center;
     font-size: 50px;
     letter-spacing: 1px;
     text-transform: uppercase;
 }
 
-.container-degrees h3{
-    padding-top: 10px;
+.degrees h3{
+    padding: 10px;
     text-align: center;
     font-size: 30px;
     letter-spacing: 1px;
+    font-weight: lighter;
+}
+
+.degrees h3 span {
+    background-color: #F8EFBA;
+    padding: 10px;
 }
 
 .row {
-    width: 20%;
+    width: 25%;
+    display: inline-block;
+    background-color: white;
+    padding-top: 20px;
+    margin: 30px 50px 20px 50px;
+    border-radius: 5px;
+    box-shadow: 2px 2px 10px black;
+}
+
+.col {
+    text-align: center;
+}
+
+.col img {
+    width: 50%;
+}
+
+.title {
+    text-align: center;
+    padding-bottom: 10px;
+}
+
+.title h1 {
+    font-size: 20px;
+    text-transform: uppercase;
+}
+
+.title a {
+    padding: 5px;
+    color:red;
+    font-size: 15px;
+    display: block;
+    cursor: pointer;
+}
+
+/*
+@media only screen and (max-width: 380px) {
+    .bk-image .campus-image {
+        position: absolute;
+        z-index: -1;
+        background-image: url(Images/campus.jpg);
+        opacity: 0.4;
+        width: 100%;
+        height: 400vh;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+
+    .degrees h1{
+        font-size: 24px;
+    }
+    
+    .degrees h3{
+        font-size: 16px;
+    }
+
+    .row {
+        width: 70%;
+        margin: 20px 50px 20px 50px;
+    }
+
+    .title h1 {
+        font-size: 18px;
+        text-transform: uppercase;
+    }
+    
+    .title a {
+        padding: 5px;
+        color:red;
+        font-size: 14px;
+        display: block;
+        cursor: pointer;
+    }
+}
+
+@media only screen and (min-width: 425px) {
+    .bk-image .campus-image {
+        position: absolute;
+        z-index: -1;
+        background-image: url(Images/campus.jpg);
+        opacity: 0.4;
+        width: 100%;
+        height: 380vh;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+
+    .degrees h1{
+        font-size: 32px;
+    }
+    
+    .degrees h3{
+        font-size: 24px;
+    }
+
+    .row {
+        width: 70%;
+        margin: 20px 50px 20px 60px;
+    }
+
+    .col img {
+        width: 30%;
+    }
+
+    .title h1 {
+        font-size: 20px;
+        text-transform: uppercase;
+    }
+    
+    .title a {
+        padding: 5px;
+        color:red;
+        font-size: 16px;
+        display: block;
+        cursor: pointer;
+    }
+}
+
+
+@media only screen and (min-width: 768px) {
+    .bk-image .campus-image {
+        height: 140vh;
+    }
+
+    .degrees h1{
+        font-size: 36px;
+    }
+    
+    .degrees h3{
+        font-size: 28px;
+    }
+
+    .row {
+        width: 30%;
+        padding-top: 20px;
+        margin: 10px;
+        margin-top: 40px;
+    }
+}
+
+@media only screen and (min-width: 1024px) {
+    .bk-image .campus-image {
+        height: 120vh;
+    }
+
+    .degrees h1{
+        font-size: 36px;
+    }
+    
+    .degrees h3{
+        font-size: 28px;
+    }
+
+    .row {
+        width: 30%;
+        padding-top: 20px;
+        margin: 40px 10px 10px 15px;
+    }
+}
+
+@media only screen and (min-width: 1440px) {
+    .bk-image .campus-image {
+        height: 110vh;
+    }
+
+    .row {
+        width: 30%;
+        padding-top: 20px;
+        margin: 40px 10px 10px 20px;
+    }
+}
+
+*/
+
+/*---------------Announcements, News & Events----------------*/
+
+.wrapper{
+    background-color: white;
+    margin: 100px auto;
+    width: 80%;
+}
+
+.wrapper h1{
+    margin: 40px 0 20px 0;
+    padding: 10px 0;
+    font-size: 35px;
+    border-bottom: 2px black solid;
+    letter-spacing: 2px;
+}
+
+.wrapper .fa-chevron-right {
+    float: right;
+    cursor: pointer;
+}
+
+.wrapper a{
+    text-decoration: none;
+    color: #111;
+}
+.wrapper li{
+    list-style: none;
+    color: #111;
+    padding: 40px 10px;
+    font-size: 24px;
+    border-bottom: lightgray 1px solid;
+}
+
+/*--------------------Footer---------------------*/
+footer {
+    height: 200px;
+    background: #CAD3C8;
+    color: black;
+    margin-top: 0px;
+}
+
+.container-footer {
+    width: 100%;
+    margin: 0 auto;
+}
+
+.logo-footer img {
+    float: left;
+    margin: 20px;
+    margin-left: 40px;
+    width: 100px;
+
+}
+
+.left-column {
+    width: 25%;
+    float: left;
+    padding: 30px;
+    padding-left: 2%;
+    line-height: 30px;
+}
+
+.left-column h2 {
+    font-size: 20px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+.s-media {
+    padding: 20px 0px 20px 0px;
+}
+
+.s-media a{
+    font-size: 25px;
+    padding: 5px;
+    color: #F8EFBA;
+}
+
+.right-column {
+    float: right;
+    padding: 40px;
+}
+
+.right-column h3 {
+    width: 50%;
+    color: black;
+    font-size: 25px;
+    text-decoration-line: underline;
+    text-underline-position: under;
+    text-decoration-color: #F8EFBA;
+    letter-spacing: 2px;
+}
+
+.right-column  p{
+    color: black;
+    margin: 15px auto;
+    letter-spacing: 1px;
+}
+
+
+.newsletter {
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.text-box {
+    padding: 14px 30px;
+    font-size: 1rem;
+    color: black;
+    border: none;
+    border-radius: 25px;
+    font-weight: 500px;
+    outline: none;
+    min-width: 260px;
+    letter-spacing: 1px;
+    margin-left: 0px;
+}
+
+
+.button {
+    margin-left: 10px;
+    padding: 14px 30px;
+    font-size: 16px;
+    color: black;
+    background: #F8EFBA; 
+    border: none;
+    border-radius: 30px;
+    font-weight: 500px;
+    letter-spacing: 1px;
+    outline: none;
+}
+
+.copyright {
+    padding-top: 30px;
+    background: #CAD3C8;
+    border-bottom: 5px solid #F8EFBA;
+}
+
+.copyright p {
+    margin: 5px auto;
+    text-align: center;
+    font-size: 1rem;
+    color: black;
+    letter-spacing: 2px;
 }
