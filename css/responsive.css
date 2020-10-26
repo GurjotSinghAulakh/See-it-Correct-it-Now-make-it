@@ -1,0 +1,521 @@
+@media only screen and (max-width: 1024px) {
+
+/*---------------------- Navigationbar ---------------------*/
+    .logo-txt h1 {
+        font-size: 20px; 
+    }
+    
+    .logo-txt h2 {
+        font-size: 18px; 
+    }
+
+    .right-side-menu-bar ul li a {
+        font-size: 18px; 
+    }
+    
+    label #close-btn, label #bars-btn {
+        font-size: 16px; 
+    }
+
+/*---------------------- Main Background ---------------------*/
+
+    .main-links h1{
+        font-size: 20px;
+    }
+    
+    .main-links h2{
+        font-size: 15px;
+    }
+
+/*---------------------- Student Video -----------------------*/
+
+    .student-video h1{
+        font-size: 40px;
+    }
+
+
+/*------------------------- Degrees --------------------------*/
+    .bk-image .campus-image {
+        height: 160vh;
+    }
+
+    .degrees h1{
+        font-size: 40px;
+    }
+
+    .degrees h3{
+        font-size: 28px;
+    }
+
+    .row {
+        margin: 30px 40px 20px 40px;
+    }
+
+/*---------------Announcements, News & Events----------------*/
+
+/*-------------------------Footer----------------------------*/
+    .logo-footer img {
+        padding-top: 20px;
+    }
+
+    .left-column {
+        width: 30%;
+        padding: 40px;
+    }
+    .left-column h2 {
+        font-size: 18px;
+    }
+
+    .s-media a{
+        font-size: 20px;
+    }
+
+}
+
+
+
+@media only screen and (max-width: 768px) {
+
+/*-----------------------Navigationbar----------------------*/
+    .logo-txt h1 {
+        font-size: 18px; 
+    }
+    
+    .logo-txt h2 {
+        font-size: 16px; 
+    }
+
+    .logo-txt ul li{
+        padding: 4px 6px;
+    }
+
+    .logo-txt ul li a{
+        font-size: 14px; 
+    }
+
+/*---------------------- Student Video -----------------------*/
+    .student-video {
+        height: 100vh;
+        width: 100%;
+        text-align: center;
+    }
+
+    .container video {
+        float: none;
+        padding: 70px;
+        padding-bottom: 20px;
+        width: 90%;
+    }
+
+    .student-video h3{
+        padding: 10px;
+        font-size: 20px;
+    }
+
+    .student-video h1{
+        padding: 20px;
+        font-size: 30px;
+    }
+
+/*------------------------- Degrees --------------------------*/
+    .bk-image .campus-image {
+        height: 220vh;
+    }
+
+    .degrees h1{
+        font-size: 40px;
+    }
+
+    .degrees h3{
+        font-size: 28px;
+    }
+
+    .row {
+        margin: 30px 75px 20px 75px;
+        width: 30%;
+    }
+
+/*---------------Announcements, News & Events----------------*/
+    .wrapper{
+        width: 70%;
+        margin: 100px auto;
+    }
+
+    .wrapper h1{
+        margin: 30px 0 20px 0;
+        font-size: 30px;
+    }
+
+    .wrapper li{
+        padding: 30px 10px;
+        font-size: 20px;
+    }
+
+
+/*-------------------------Footer----------------------------*/
+    footer {
+        height: 250px;
+    }
+
+    .logo-footer img {
+        display:none;
+        margin: 10px;
+        margin-left: 40px;
+        width: 80px;
+    }
+
+    .container-footer::after{
+        content:" ";
+        clear:both;
+        display: table;
+    }
+
+    .logo-footer img {
+        padding-top: 20px;
+    }
+
+    .left-column {
+        width: 50%;
+        padding: 20px;
+        padding-top: 30px;
+        padding-left: 40px;
+    }
+    .left-column h2 {
+        font-size: 16px;
+        padding-top: 20px;
+    }
+
+    .s-media a{
+        font-size: 18px;
+    }
+
+    .right-column {
+        float: right;
+        width: 50%;
+    }
+
+    .right-column h3 {
+        font-size: 20px;
+    }
+
+    .right-column  p{
+        font-size: 15px;
+    }
+
+    .text-box {
+        padding: 12px 32px;
+        font-size: 15px;
+    }
+
+    .button {
+        margin-left: 0px;
+        margin-top: 10px;
+        padding: 12px 32px;
+        font-size: 15px;
+    }
+    
+    .copyright {
+        padding-top: 10px;
+    }
+
+    .copyright p {
+        font-size: 15px;
+    }
+    
+}
+
+
+@media only screen and (max-width: 425px) {
+
+/*-----------------------Navigationbar----------------------*/
+    .logo img {
+        width: 80px;
+    }
+
+    .logo-txt {
+        padding-top: 20px;
+        line-height: 30px;
+        margin-right: 0px;
+    }
+
+    .logo-txt ul {
+        padding: 30px 0px 10px 20px;
+    }
+
+    .logo-txt ul li{
+        text-align: center;
+    }
+
+    .logo-txt h1 {
+        width: 400px;
+        font-size: 16px; 
+    }
+
+    .logo-txt h2 {
+        width: 400px;
+        font-size: 14px; 
+    }
+
+    .logo-txt ul li{
+        padding: 4px 6px;
+    }
+
+    .logo-txt ul li a{
+        font-size: 12px; 
+    }
+
+    .right-side-menu-bar ul li a {
+        font-size: 18px; 
+    }
+
+    label #close-btn, label #bars-btn {
+        font-size: 14px; 
+    }
+
+/*----------------- Main Background ------------------*/
+
+    .main-background {
+        width: 520px;
+    }
+
+    .main-links {
+        bottom: 80px;
+        left: 20px;
+    }
+
+    .main-links h1{
+        font-size: 18px;
+    }
+
+    .main-links h2{
+        font-size: 12px;
+    }
+    
+/*---------------------- Student Video -----------------------*/
+    .container video {
+        float: none;
+        padding: 50px;
+        padding-bottom: 20px;
+        width: 120%;
+    }
+
+    .student-video h3{
+        padding: 10px;
+        padding-left: 60px;
+        font-size: 20px;
+    }
+
+    .student-video h1{
+        padding: 10px;
+        font-size: 30px;
+        padding-left: 50px;
+    }
+
+
+/*------------------------- Degrees --------------------------*/
+
+    .degrees {
+        padding-left: 100px;
+    }
+
+    .bk-image .campus-image {
+        height: 435vh;
+        width: 520px;
+    }
+
+    .degrees h1{
+        font-size: 30px;
+    }
+
+    .degrees h3{
+        padding-top: 20px;
+        font-size: 20px;
+    }
+
+    .row {
+        margin: 30px 75px 20px 100px;
+        width: 70%;
+    }
+
+/*---------------Announcements, News & Events----------------*/
+    .latest-news-events {
+        width: 510px;
+    }
+
+    .wrapper{
+        width: 70%;
+        margin: 100px auto;
+    }
+
+    .wrapper h1{
+        margin: 30px 0 20px 0;
+        font-size: 24px;
+    }
+
+    .wrapper li{
+        padding: 30px 10px;
+        font-size: 16px;
+    }
+
+    .container-footer {
+        width: 510px;
+    }
+
+
+
+/*-------------------------Footer----------------------------*/
+    footer {
+        height: 370px;
+        width: 520px;
+    }
+
+    .logo-footer img {
+        display: none;
+    }
+
+    .logo-footer img {
+        padding-top: 20px;
+    }
+
+    .left-column {
+        width: 100%;
+        padding: 20px;
+        text-align: center;
+ 
+    }
+
+    .right-column {
+        width: 100%;
+        float: left;
+        padding: 20px;
+        text-align: center;
+    }
+
+    .text-box {
+        padding: 12px 20px;
+        font-size: 15px;
+    }
+
+    .button {
+        margin-left: 10px;
+        margin-top: 10px;
+        padding: 12px 32px;
+        font-size: 15px;
+    }
+
+    .copyright {
+        width: 520px;
+        padding-top: 0px;
+    }
+}
+
+
+@media only screen and (max-width: 375px) {
+/*---------------------- Student Video -----------------------*/
+    .student-video {
+        height: 100vh;
+        width: 100%;
+    }
+
+    .container video {
+        padding-left: 50px;
+        padding-bottom: 20px;
+        width: 140%;
+    }
+
+    .student-video h3{
+        float: left;
+        padding-left: 50px;
+        font-size: 20px;
+    }
+
+    .student-video h1{
+        float: left;
+        padding-right: 0px;
+        font-size: 30px;
+    }
+
+
+/*------------------------- Degrees --------------------------*/
+    .degrees {
+        padding-left: 120px;
+    }
+
+    .bk-image .campus-image {
+        height: 420vh;
+        width: 520px;
+    }
+
+    .degrees h1{
+        font-size: 30px;
+    }
+
+    .degrees h3{
+        padding-top: 20px;
+        font-size: 20px;
+    }
+
+    .row {
+        margin: 30px 75px 20px 120px;
+        width: 70%;
+    }
+
+}
+
+
+@media only screen and (max-width: 320px) {
+/*---------------------- Student Video -----------------------*/
+    .student-video {
+        height: 100vh;
+        width: 100%;
+    }
+
+    .container video {
+        padding-left: 50px;
+        padding-bottom: 20px;
+        width: 160%;
+    }
+
+    .student-video h3{
+        float: left;
+        padding-left: 50px;
+        font-size: 20px;
+    }
+
+    .student-video h1{
+        float: left;
+        font-size: 30px;
+    }
+
+/*------------------------- Degrees --------------------------*/
+    .degrees {
+        padding-left: 130px;
+    }
+
+    .bk-image .campus-image {
+        height: 400vh;
+        width: 520px;
+    }
+
+    .degrees h1{
+        width: 250px;
+        font-size: 30px;
+    }
+
+    .degrees h3{
+        width: 250px;
+        padding-top: 20px;
+        font-size: 20px;
+    }
+
+    .row {
+        margin: 30px 75px 20px 140px;
+        width: 70%;
+    }
+
+}
+
+
+
+
+

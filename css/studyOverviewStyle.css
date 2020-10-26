@@ -1,13 +1,20 @@
-
 *{
     padding: 0;
     margin: 0;
 }
+
+/*---------------------- Studies -------------------------*/
+
+.studies {
+    margin-top: 200px;
+}
+
 .wrapper{
     background-color: white;
     margin: 200px auto;
     width: 1062px;
 }
+
 .wrapper h1{
     margin: 40px 0 20px 0;
     padding: 10px 0;
@@ -20,15 +27,17 @@
     text-decoration: none;
     color: #111;
 }
+
 .wrapper li{
     list-style: none;
     color: #111;
-    padding:40px 10px;
+    padding: 40px 10px;
     font-size: x-large;
     border-bottom: lightgray 1px solid;
 }
 
-/* Responsive */
+/*---------------------- Responsive -------------------------*/
+
 @media only screen and (max-width: 1162px) {
     .wrapper{
         width: 90%;
@@ -39,20 +48,27 @@
     .wrapper{
         margin: 150px auto;
     }
+
     .wrapper h1{
         margin: 0px 0 20px 0;
         padding: 10px 0;
         font-size: 35px;
     }
+
     .wrapper li{
         padding:30px 10px;
         font-size: large;
     }
 }
 @media only screen and (max-width: 425px) {
+    .studies {
+        width: 525px;
+    }
+
     .wrapper{
         margin: 120px auto;
     }
+
     .wrapper h1{
         margin: 0px 0 20px 0;
         padding: 10px 0;
@@ -67,14 +83,17 @@
     .wrapper{
         margin: 120px auto;
     }
+
     .wrapper h1{
         margin: 0px 0 20px 0;
         padding: 10px 0;
         font-size: 20px;
     }
+
     .wrapper li{
         padding:20px 5px;
         font-size: 14px;
     }
 }
+
 
