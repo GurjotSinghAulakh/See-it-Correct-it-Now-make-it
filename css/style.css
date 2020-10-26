@@ -474,6 +474,25 @@ footer {
 /*---------------------- Responsive -------------------------*/
 
 
+@media only screen and (max-width: 1440px) {
+/*------------------------- Degrees --------------------------*/
+    .bk-image .campus-image {
+        height: 110vh;
+    }
+
+    .degrees h1{
+        font-size: 40px;
+    }
+
+    .degrees h3{
+        font-size: 28px;
+    }
+
+    .row {
+        margin: 30px 40px 20px 40px;
+    }
+}
+
 
 @media only screen and (max-width: 1024px) {
 
@@ -513,7 +532,7 @@ footer {
 
 /*------------------------- Degrees --------------------------*/
     .bk-image .campus-image {
-        height: 160vh;
+        height: 100vh;
     }
 
     .degrees h1{
@@ -596,7 +615,7 @@ footer {
 
 /*------------------------- Degrees --------------------------*/
     .bk-image .campus-image {
-        height: 220vh;
+        height: 135vh;
     }
 
     .degrees h1{
@@ -796,7 +815,7 @@ footer {
     }
 
     .bk-image .campus-image {
-        height: 435vh;
+        height: 275vh;
         width: 520px;
     }
 
@@ -919,7 +938,7 @@ footer {
     }
 
     .bk-image .campus-image {
-        height: 420vh;
+        height: 260vh;
         width: 520px;
     }
 
@@ -970,7 +989,7 @@ footer {
     }
 
     .bk-image .campus-image {
-        height: 400vh;
+        height: 250vh;
         width: 520px;
     }
 
