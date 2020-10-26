@@ -473,27 +473,6 @@ footer {
 
 /*---------------------- Responsive -------------------------*/
 
-
-@media only screen and (max-width: 1440px) {
-/*------------------------- Degrees --------------------------*/
-    .bk-image .campus-image {
-        height: 110vh;
-    }
-
-    .degrees h1{
-        font-size: 40px;
-    }
-
-    .degrees h3{
-        font-size: 28px;
-    }
-
-    .row {
-        margin: 30px 40px 20px 40px;
-    }
-}
-
-
 @media only screen and (max-width: 1024px) {
 
 /*---------------------- Navigationbar ---------------------*/
