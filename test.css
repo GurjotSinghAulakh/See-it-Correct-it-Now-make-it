@@ -13,6 +13,8 @@ body {
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
+/*-----------------------Navigationbar----------------------*/
+
 nav {
     position: fixed;
     top: 0px;
@@ -44,7 +46,6 @@ nav {
 .logo-txt {
     padding-top: 20px;
     line-height: 40px;
-    font-size: 15px; 
     text-align: center;
     text-transform: uppercase;
     letter-spacing: 2px;
@@ -361,33 +362,51 @@ label #close-btn {
 }
 
 .main-links {
-    bottom: 120px;
-    left: 50px;
+    bottom: 100px;
+    left: 40px;
     position: absolute;
-    text-align: left;
+    text-align: center;
     letter-spacing: 1px;
 }
 
-.main-links a{
+.main-links a{/*
     background-color: #F8EFBA ;
     padding: 5px;
     text-decoration: none;
     color:#111;
-    border: 1px solid #111;
+    */
+
+    margin-left: 10px;
+    padding: 12px;
+    color: black;
+    background: #F8EFBA; 
+    border: none;
+    border-radius: 10px;
+    font-weight: 500px;
+    letter-spacing: 1px;
+    outline: none;
+    text-transform: uppercase;
 }
 
 .main-links h1{
+    font-size: 30px;
+    /*
     font-family: sans-serif;
     padding: 25px 0;
     font-size: 30px;
     font-weight: bold;
     text-transform: uppercase;
+    */
 }
 
 .main-links h2{
+    margin-top: 40px;
+    font-size: 20px;
+    /*
     font-family: sans-serif;
     font-size: 20px;
     text-transform: uppercase;
+    */
 }
 /*
 
@@ -782,6 +801,7 @@ label #close-btn {
 
 .wrapper a{
     text-decoration: none;
+    letter-spacing: 2px;
     color: #111;
 }
 .wrapper li{
@@ -810,7 +830,6 @@ footer {
     margin: 20px;
     margin-left: 40px;
     width: 100px;
-
 }
 
 .left-column {
