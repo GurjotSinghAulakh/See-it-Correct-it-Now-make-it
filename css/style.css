@@ -165,7 +165,7 @@ label #close-btn {
 
 .main-background {
     top: 0;
-    background-image: url('../Images/backgroundpic.jpg');
+    background-image: url(../Images/backgroundpic.jpg);
     height: 100vh;
     background-size: cover;
     background-repeat: no-repeat;
@@ -255,7 +255,7 @@ label #close-btn {
 .bk-image .campus-image {
     position: absolute;
     z-index: -1;
-    background-image: url('../Images/campus.jpg');
+    background-image: url(../Images/campus.jpg);
     opacity: 0.4;
     width: 100%;
     height: 150vh;
