@@ -41,16 +41,16 @@ nav {
 }
 
 .logo img {
-    width: 100px;
+    width: 80px;
 }
 
 .logo-txt {
+    width: 90%;
     padding-top: 20px;
     line-height: 40px;
     text-align: center;
     text-transform: uppercase;
     letter-spacing: 2px;
-    margin-right: 150px;
 }
 
 .logo-txt h1 {
@@ -59,22 +59,6 @@ nav {
 
 .logo-txt h2 {
     font-size: 20px; 
-}
-
-.logo-txt ul li{
-    padding: 5px 10px;
-    display: inline;
-    border: 1px solid black;
-}
-
-.logo-txt ul li a{
-    text-decoration: none;
-    color:black;
-}
-
-.logo-txt ul li:hover{
-    background-color: #F8EFBA;
-    transition: 0.5s;
 }
 
 .right-side-menu-bar {
@@ -90,7 +74,7 @@ nav {
 
 .right-side-menu-bar ul {
     display: block;
-    line-height: 50px;
+    line-height: 40px;
 }
 
 .right-side-menu-bar ul li {
@@ -153,12 +137,14 @@ label #bars-btn {
     padding: 6px 12px;
     letter-spacing: 2px;
     text-transform: uppercase;
+    font-size: 14px;
 }
 
 label #close-btn {
     padding: 6px 12px;
     letter-spacing: 2px;
     text-transform: uppercase;
+    font-size: 14px;
 }
 
 /*----------------- Main Background ------------------*/
@@ -170,13 +156,13 @@ label #close-btn {
     background-size: cover;
     background-repeat: no-repeat;
     opacity: 0.6;
+    overflow: hidden
 }
 
 .main-links {
     bottom: 100px;
     left: 40px;
     position: absolute;
-    text-align: center;
     letter-spacing: 1px;
 }
 
@@ -201,6 +187,12 @@ label #close-btn {
     margin-top: 40px;
     font-size: 20px;
 }
+
+.main-links h3{
+    margin-top: 40px;
+    font-size: 14px;
+}
+
 
 .main-links a:hover{
     background-color: #F8EFBA;
@@ -476,13 +468,6 @@ footer {
 @media only screen and (max-width: 1024px) {
 
 /*---------------------- Navigationbar ---------------------*/
-    .logo-txt h1 {
-        font-size: 20px; 
-    }
-    
-    .logo-txt h2 {
-        font-size: 18px; 
-    }
 
     .right-side-menu-bar ul li a {
         font-size: 18px; 
@@ -511,7 +496,7 @@ footer {
 
 /*------------------------- Degrees --------------------------*/
     .bk-image .campus-image {
-        height: 100vh;
+        height: 160vh;
     }
 
     .degrees h1{
@@ -547,8 +532,7 @@ footer {
 
 }
 
-
-
+       
 @media only screen and (max-width: 768px) {
 
 /*-----------------------Navigationbar----------------------*/
@@ -567,7 +551,7 @@ footer {
     .logo-txt ul li a{
         font-size: 14px; 
     }
-
+    
 /*---------------------- Student Video -----------------------*/
     .student-video {
         height: 100vh;
@@ -591,10 +575,10 @@ footer {
         padding: 20px;
         font-size: 30px;
     }
-
+    
 /*------------------------- Degrees --------------------------*/
     .bk-image .campus-image {
-        height: 135vh;
+        height: 220vh;
     }
 
     .degrees h1{
@@ -626,7 +610,7 @@ footer {
         font-size: 20px;
     }
 
-
+    
 /*-------------------------Footer----------------------------*/
     footer {
         height: 250px;
@@ -696,47 +680,40 @@ footer {
     .copyright p {
         font-size: 15px;
     }
-    
 }
 
-
 @media only screen and (max-width: 425px) {
-
+    
 /*-----------------------Navigationbar----------------------*/
+    nav {
+        height: 15%;
+        line-height: 10px;
+        padding: 20px;
+        padding-right: 0px;
+    }
+
     .logo img {
-        width: 80px;
+        display: none;
     }
 
     .logo-txt {
         padding-top: 20px;
         line-height: 30px;
-        margin-right: 0px;
-    }
-
-    .logo-txt ul {
-        padding: 30px 0px 10px 20px;
-    }
-
-    .logo-txt ul li{
-        text-align: center;
     }
 
     .logo-txt h1 {
-        width: 400px;
+        padding-right: 80px;
         font-size: 16px; 
     }
 
     .logo-txt h2 {
-        width: 400px;
+        display: none;
         font-size: 14px; 
     }
 
-    .logo-txt ul li{
-        padding: 4px 6px;
-    }
+    .right-side-menu-bar {
+        padding-top: 40px;
 
-    .logo-txt ul li a{
-        font-size: 12px; 
     }
 
     .right-side-menu-bar ul li a {
@@ -748,9 +725,8 @@ footer {
     }
 
 /*----------------- Main Background ------------------*/
-
     .main-background {
-        width: 520px;
+        width: 125%;
     }
 
     .main-links {
@@ -769,9 +745,9 @@ footer {
 /*---------------------- Student Video -----------------------*/
     .container video {
         float: none;
-        padding: 50px;
+        padding: 40px;
         padding-bottom: 20px;
-        width: 120%;
+        width: 490px;
     }
 
     .student-video h3{
@@ -794,8 +770,8 @@ footer {
     }
 
     .bk-image .campus-image {
-        height: 275vh;
-        width: 520px;
+        height: 440vh;
+        width: 125%;
     }
 
     .degrees h1{
@@ -808,17 +784,17 @@ footer {
     }
 
     .row {
-        margin: 30px 75px 20px 100px;
+        margin: 30px 75px 20px 110px;
         width: 70%;
     }
 
 /*---------------Announcements, News & Events----------------*/
     .latest-news-events {
-        width: 510px;
+        width: 125%;
     }
 
     .wrapper{
-        width: 70%;
+        width:  70%;
         margin: 100px auto;
     }
 
@@ -841,7 +817,7 @@ footer {
 /*-------------------------Footer----------------------------*/
     footer {
         height: 370px;
-        width: 520px;
+        width: 125%;
     }
 
     .logo-footer img {
@@ -855,7 +831,6 @@ footer {
     .left-column {
         width: 100%;
         padding: 20px;
-        text-align: center;
     
     }
 
@@ -863,7 +838,6 @@ footer {
         width: 100%;
         float: left;
         padding: 20px;
-        text-align: center;
     }
 
     .text-box {
@@ -879,18 +853,26 @@ footer {
     }
 
     .copyright {
-        width: 520px;
+        width: 125%;
         padding-top: 0px;
     }
 }
 
-
 @media only screen and (max-width: 375px) {
-/*---------------------- Student Video -----------------------*/
-    .student-video {
-        height: 100vh;
-        width: 100%;
+/*-----------------------Navigationbar----------------------*/
+    nav {
+        height: 15%;
+        line-height: 10px;
+        padding: 20px;
+        padding-right: 0px;
     }
+
+/*----------------- Main Background ------------------*/
+    .main-background {
+        width: 140%;
+    }
+
+/*---------------------- Student Video -----------------------*/
 
     .container video {
         padding-left: 50px;
@@ -906,7 +888,7 @@ footer {
 
     .student-video h1{
         float: left;
-        padding-right: 0px;
+        padding-right: 60px;
         font-size: 30px;
     }
 
@@ -917,7 +899,7 @@ footer {
     }
 
     .bk-image .campus-image {
-        height: 260vh;
+        height: 420vh;
         width: 520px;
     }
 
@@ -935,60 +917,48 @@ footer {
         width: 70%;
     }
 
+/*---------------Announcements, News & Events----------------*/
+    .latest-news-events {
+        width: 140%;
+    }
+
+/*-------------------------Footer----------------------------*/
+    footer {
+        width: 140%;
+    }
+
+    .copyright {
+        width: 140%;
+    }
 }
 
 
-@media only screen and (max-width: 320px) {
-/*---------------------- Student Video -----------------------*/
-    .student-video {
-        height: 100vh;
-        width: 100%;
-    }
 
-    .container video {
-        padding-left: 50px;
-        padding-bottom: 20px;
-        width: 160%;
-    }
 
-    .student-video h3{
-        float: left;
-        padding-left: 50px;
-        font-size: 20px;
-    }
 
-    .student-video h1{
-        float: left;
-        font-size: 30px;
-    }
 
-/*------------------------- Degrees --------------------------*/
-    .degrees {
-        padding-left: 130px;
-    }
 
-    .bk-image .campus-image {
-        height: 250vh;
-        width: 520px;
-    }
 
-    .degrees h1{
-        width: 250px;
-        font-size: 30px;
-    }
 
-    .degrees h3{
-        width: 250px;
-        padding-top: 20px;
-        font-size: 20px;
-    }
 
-    .row {
-        margin: 30px 75px 20px 140px;
-        width: 70%;
-    }
 
-}
 
-    
-    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
