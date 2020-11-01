@@ -1,3 +1,19 @@
+@media only screen and (max-width: 1440px) {
+
+/*---------------------- Student Video -----------------------*/
+
+    .student-video {
+        height: 80vh;
+        width: 100%;
+    }
+
+/*------------------------- Degrees --------------------------*/
+    .bk-image .campus-image {
+        height: 115vh;
+    }
+}
+
+
 @media only screen and (max-width: 1024px) {
 
 /*---------------------- Navigationbar ---------------------*/
@@ -29,6 +45,11 @@
 
 /*---------------------- Student Video -----------------------*/
 
+    .student-video {
+        height: 70vh;
+        width: 100%;
+    }
+
     .student-video h1{
         font-size: 40px;
     }
@@ -36,7 +57,7 @@
 
 /*------------------------- Degrees --------------------------*/
     .bk-image .campus-image {
-        height: 160vh;
+        height: 100vh;
     }
 
     .degrees h1{
@@ -119,7 +140,7 @@
 
 /*------------------------- Degrees --------------------------*/
     .bk-image .campus-image {
-        height: 220vh;
+        height: 135vh;
     }
 
     .degrees h1{
@@ -292,6 +313,11 @@
     }
     
 /*---------------------- Student Video -----------------------*/
+    .student-video {
+        height: 70vh;
+        width: 100%;
+    }
+
     .container video {
         float: none;
         padding: 50px;
@@ -319,7 +345,7 @@
     }
 
     .bk-image .campus-image {
-        height: 435vh;
+        height: 275vh;
         width: 520px;
     }
 
@@ -413,7 +439,7 @@
 @media only screen and (max-width: 375px) {
 /*---------------------- Student Video -----------------------*/
     .student-video {
-        height: 100vh;
+        height: 70vh;
         width: 100%;
     }
 
@@ -442,7 +468,7 @@
     }
 
     .bk-image .campus-image {
-        height: 420vh;
+        height: 260vh;
         width: 520px;
     }
 
@@ -466,7 +492,7 @@
 @media only screen and (max-width: 320px) {
 /*---------------------- Student Video -----------------------*/
     .student-video {
-        height: 100vh;
+        height: 70vh;
         width: 100%;
     }
 
@@ -493,7 +519,7 @@
     }
 
     .bk-image .campus-image {
-        height: 400vh;
+        height: 250vh;
         width: 520px;
     }
 
