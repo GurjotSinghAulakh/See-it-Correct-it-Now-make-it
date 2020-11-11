@@ -462,17 +462,17 @@ footer {
     letter-spacing: 2px;
 }
 
-/*---------------------- Responsive -------------------------*/
+/*---------------------- Responsive -------------------------*
 @media only screen and (max-width: 1440px) {
 
-/*---------------------- Student Video -----------------------*/
+/*---------------------- Student Video -----------------------*
 
     .student-video {
         height: 80vh;
         width: 100%;
     }
 
-/*------------------------- Degrees --------------------------*/
+/*------------------------- Degrees --------------------------*
     .bk-image .campus-image {
         height: 115vh;
     }
@@ -481,7 +481,7 @@ footer {
 
 @media only screen and (max-width: 1024px) {
 
-/*---------------------- Navigationbar ---------------------*/
+/*---------------------- Navigationbar ---------------------*
     .logo-txt h1 {
         font-size: 20px; 
     }
@@ -498,7 +498,7 @@ footer {
         font-size: 16px; 
     }
 
-/*---------------------- Main Background ---------------------*/
+/*---------------------- Main Background ---------------------*
 
     .main-links h1{
         font-size: 20px;
@@ -508,7 +508,7 @@ footer {
         font-size: 15px;
     }
 
-/*---------------------- Student Video -----------------------*/
+/*---------------------- Student Video -----------------------*
 
     .student-video {
         height: 70vh;
@@ -520,13 +520,15 @@ footer {
     }
 
 
-/*------------------------- Degrees --------------------------*/
+/*------------------------- Degrees --------------------------*
     .bk-image .campus-image {
         height: 100vh;
     }
 
     .degrees h1{
+        padding-top: 100px;
         font-size: 40px;
+        text-align: center;
     }
 
     .degrees h3{
@@ -537,9 +539,8 @@ footer {
         margin: 30px 40px 20px 40px;
     }
 
-/*---------------Announcements, News & Events----------------*/
 
-/*-------------------------Footer----------------------------*/
+/*-------------------------Footer----------------------------*
     .logo-footer img {
         padding-top: 20px;
     }
@@ -559,8 +560,8 @@ footer {
 }
 
 
-
-@media only screen and (max-width: 768px) {
+*/
+@media only screen and (max-width: 1024px) {
 
 /*-----------------------Navigationbar----------------------*/
     .logo-txt h1 {
@@ -581,7 +582,7 @@ footer {
 
 /*---------------------- Student Video -----------------------*/
     .student-video {
-        height: 100vh;
+        height: 120vh;
         width: 100%;
         text-align: center;
     }
@@ -815,6 +816,7 @@ footer {
     }
 
     .degrees h1{
+        padding-top: 100px;
         font-size: 30px;
     }
 
